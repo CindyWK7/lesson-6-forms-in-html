@@ -9,17 +9,38 @@
     <form>
         <fieldset>
             <!--The fieldset tag is used to group related elements in a form and draws a box around them-->
-            <legend>Personal Information:</legend>
+            <legend><h1>Personal Information:</h1></legend>
             <label>Full name:</label>
             <!--placeholder attribute can be used to provide extra information about entry to be made-->
-            <input type="text" id="fname" placeholder="Enter Name"><br><br>
+            <input type="text" id="name" placeholder="Enter Name"> 
+            <label>Surname</label>
+            <input type="text" id="name"><br><br>
             <label>Email:</label>
-            <input type="text" id="email"><br><br>
+            <input type="text" id="email">
+            <label>Phone Number:</label>
+            <input type="tel" id="phone"><br><br>
+            <label>Nationality:</label>
+            <input type="text" id="nationality"><br><br>
+            <!--Drop down in the form-->
+            <label>Preferred Language</label>
+            <select name="Language" id="language">
+                <option value="Afrikaans">Afrikaans</option>
+				<option value="English">English</option>
+				<option value="French">French</option><option>Hindi</option>
+                <option>Swahili</option>
+            </select>
+            <br><br>
             <label>Gender:</label><br>
             <input type="radio" id="gender" value="female">Female<br>
             <input type="radio" id="gender" value="male">Male<br><br>
-            <label>Birthday:</label>
+            <label>Date of birth:</label>
             <input type="date" id="birthday" name="birthday"><br><br>
+            <label>Username</label><br>
+            <input type="text" id="username" placeholder="Enter username"><br>
+            <label>Password:</label><br>
+            <input type="password" id="password" placeholder="Enter password"><br>
+            <button>Submit</button>
+
         </fieldset>
     </form>
 </body>
